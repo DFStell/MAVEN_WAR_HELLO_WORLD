@@ -32,7 +32,7 @@ pipeline{
                 echo 'Then you need to push this image to the public registry dockerhub into your account'
                 echo 'Use the docker push command'
 		sh "sudo docker login -u ${DOCKER_HUB_CREDENTIALS_USR} -p ${DOCKER_HUB_CREDENTIALS_PSW}"
-                sh "sudo docker push dfstell/finaldevops:latest"
+                sh "sudo docker push dfstell/finaldevops:1.0"
             }
         }
   
