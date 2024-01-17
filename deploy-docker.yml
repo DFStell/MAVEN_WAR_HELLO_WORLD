@@ -30,7 +30,7 @@
     - name: Install Python
       yum:
         name:
-          -python
+          - python
         state: present      
 
     - name: Download get-pip.py
