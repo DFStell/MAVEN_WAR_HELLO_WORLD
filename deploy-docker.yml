@@ -26,3 +26,7 @@
         name: docker
         state: started
         enabled: yes    
+
+    - name: Log in to Docker
+
+    - name: 
