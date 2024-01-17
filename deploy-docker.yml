@@ -50,13 +50,13 @@
 
     - name: Pull Docker Container
       docker_image:
-        name: dfstell/finaldevops:1.0
+        name: dfstell/finaldevops:1.1
         source: pull
 
     - name: Run Docker Container
       docker_container:
         name: finaldevops
-        image: dfstell/finaldevops:1.0
+        image: dfstell/finaldevops:1.1
         state: started
         ports: 
          - 8080:8080
