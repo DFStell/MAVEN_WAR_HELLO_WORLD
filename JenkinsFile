@@ -50,6 +50,7 @@ pipeline{
 			extraVars:[
 				DockerUser: ${DOCKER_HUB_CREDENTIALS_USR},
 				DockerPassword: ${DOCKER_HUB_CREDENTIALS_PSW},
+			]
 		}
             }
         }        
