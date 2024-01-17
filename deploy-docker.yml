@@ -1,5 +1,5 @@
 ---
-- hosts: linuxclient1
+- hosts: 10.0.0.215
   become: True
   become_user: root
   tasks:
