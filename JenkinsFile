@@ -44,12 +44,12 @@ pipeline{
                 ansiblePlaybook credentialsId: 'Ansible-ID', inventory: 'dev.inv', playbook: 'playbooktest.yml'
 		echo 'Attempting to run deploy-docker'
 		ansiblePlaybook {
-                	credentialsId: 'Ansible-ID', 
-			inventory: 'dev.inv', 
-			playbook: 'deploy-docker.yml,
-			extraVars:[
-				DockerUser: ${DOCKER_HUB_CREDENTIALS_USR},
-				DockerPassword: ${DOCKER_HUB_CREDENTIALS_PSW},
+		   credentialsId: 'Ansible-ID', 
+		   inventory: 'dev.inv', 
+		   playbook: 'deploy-docker.yml,
+		   extraVars:[
+			DockerUser: ${DOCKER_HUB_CREDENTIALS_USR},
+			DockerPassword: ${DOCKER_HUB_CREDENTIALS_PSW},
 			]
 		}
             }
