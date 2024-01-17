@@ -33,7 +33,6 @@ pipeline{
                 echo 'Use the docker push command'
 		sh "sudo docker login -u ${DOCKER_HUB_CREDENTIALS_USR} -p ${DOCKER_HUB_CREDENTIALS_PSW}"
                 sh "sudo docker push dfstell/finaldevops:1.0"
-                ansible-playbook deploy-docker.yml
             }
         }
   
@@ -41,6 +40,7 @@ pipeline{
             steps{
                 echo 'You should use the ansiblePlaybook syntax in order to call your playbook'
                 echo 'But before that you need to create an agent in order to execute the playbook on the Ansible controle node machine'
+                ansibleplaybook deploy-docker.yml
             }
         }        
     }
