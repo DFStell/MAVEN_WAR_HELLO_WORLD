@@ -26,3 +26,11 @@
         name: docker
         state: started
         enabled: yes
+
+    - name: Install PIP
+      shell: curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
+    
+    - name : Install Docker SDK
+      shell: pip install docker
+
+      
