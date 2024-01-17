@@ -44,17 +44,7 @@
     - name: Upgrade pip
       command: pip install --upgrade pip
 
-    - name: Install docker-py
+    - name: Install docker-SDK
       pip:
         name: docker
-        
-    - name: Pull Docker Image
-      shell: docker pull dfstell/finaldevops:1.0
-
-    - name: Install PIP
-      curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
-    
-    - name : Install Docker SDK
-      shell: pip install docker
-
       
